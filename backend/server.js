@@ -15,6 +15,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+// Viktigt att lägga in routern nedanför alla tillägg annars kan det krascha.
 app.use('/', router);
 
 const port = 4000;
