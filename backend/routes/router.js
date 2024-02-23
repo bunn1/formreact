@@ -1,15 +1,21 @@
 const express = require('express');
 const router = express.Router();
 
-router.post('/contact', (req, res) => {
-  // const email = req.body.email
-  // const website = req.body.website
-  // const message = req.body.message
+let messages = [];
 
+router.post('/contact', (req, res) => {
   const { email, website, message } = req.body;
 
   console.log(email + ' | ' + website + ' | ' + message);
+
+  // Assuming messages is your array of stored messages
+  messages.push({ email, website, message });
+
   res.send('Message sent. Thank you');
+});
+
+router.get('/messages', (req, res) => {
+  res.json(messages);
 });
 
 router.get('/users', (req, res) => {
