@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/contact', (req, res) => {
+  // const email = req.body.email
+  // const website = req.body.website
+  // const message = req.body.message
+
   const { email, website, message } = req.body;
 
   console.log(email + ' | ' + website + ' | ' + message);

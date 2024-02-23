@@ -106,7 +106,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Contact</h1>
 
       <form className="contactForm">
@@ -124,6 +124,7 @@ function Contact() {
 
         <label>Message</label>
         <textarea
+          className="textArea"
           id="message"
           name="message"
           value={message}
@@ -132,7 +133,7 @@ function Contact() {
 
         {error}
 
-        <button type="submit" onClick={handleSubmit}>
+        <button className="button" type="submit" onClick={handleSubmit}>
           Submit
         </button>
       </form>

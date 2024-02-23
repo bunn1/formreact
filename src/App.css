@@ -9,9 +9,6 @@
   }
 }
 
-
-
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -19,4 +16,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.success {
+  color: green;
+}
+
+.container {
+  background-color: #f5deb3; /* Parchment color */
+  padding: 20px;
+}
+
+.contactForm {
+  background-color: #fff; /* White background for form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for form */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #4caf50; /* Green button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.textArea {
+  height: 150px; /* Adjust height of textarea */
 }
