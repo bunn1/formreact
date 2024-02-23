@@ -8,12 +8,12 @@ router.post('/contact', (req, res) => {
 
   console.log(email + ' | ' + website + ' | ' + message);
 
-  // Assuming messages is your array of stored messages
   messages.push({ email, website, message });
 
   res.send('Message sent. Thank you');
 });
 
+// Visar messages på ny sida - array format
 router.get('/messages', (req, res) => {
   res.json(messages);
 });
